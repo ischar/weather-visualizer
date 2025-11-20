@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import WeatherCard from './components/WeatherCard'
-import axios from 'axios';
 
 
 const App: React.FC = () => {
-  const [temp, setTemp] = useState<number>(0);
+  const [temp] = useState<number>(0);
   const today = new Date();
   console.log(today);
 
